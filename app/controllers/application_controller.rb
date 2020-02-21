@@ -7,6 +7,8 @@ class App < Sinatra::Base
 
     get '/' do
       erb :super_hero
+      binding.pry
+
     end
 
     post '/teams' do
@@ -15,7 +17,6 @@ class App < Sinatra::Base
         Superhero.new(details)
       end
       @superheros = Superhero.all
-      binding.pry
 
       erb :team
     end
