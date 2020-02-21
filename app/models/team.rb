@@ -1,4 +1,4 @@
-class Superhero
+class Team
 
   attr_accessor :name, :power, :bio
 
