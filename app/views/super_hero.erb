@@ -1,6 +1,7 @@
 <h1>Create a Team and Heroes!</h1>
 
 <form method="POST" action="/team">
+  <p><input type="text" name="Team Name:"/></p>
   <h2>Hero 1</h2>
   <label for="pirate_name">Name</label><br>
   <input id="pirate_name" type="text" name="pirate[name]"><br>
@@ -10,7 +11,6 @@
   <input id="pirate_height" type="text" name="pirate[height]"><br>
 
   <h2>Hero 2</h2>
-  <h3><em>Ship No. 1</em></h3>
   <label for="ship_name_1">Name</label><br>
   <input id="ship_name_1" type="text" name="pirate[ships][][name]" /><br>
   <label for="ship_type_1">Type</label><br>
@@ -18,7 +18,7 @@
   <label for="ship_booty_1">Booty</label><br>
   <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" /><br><br>
 
-  <h3><em>Ship No. 2</em></h3>
+  <h3>Hero 3</h3>
   <label for="ship_name_2">Name</label><br>
   <input id="ship_name_2" type="text" name="pirate[ships][][name]" /><br>
   <label for="ship_type_2">Type</label></br>
