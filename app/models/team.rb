@@ -1,10 +1,10 @@
 class Team
 
-  attr_accessor :name, :power, :bio
+  attr_reader :name, :motto
 
-  def initialize(name, power, bio)
-    @name = name
-    @power = power
-    @bio = bio
+  def initialize(params)
+    @name = params[:name]
+    @motto = params[:motto]
   end
+
 end
